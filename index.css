@@ -93,19 +93,7 @@
     border: 0;
 }
 
-.searchBar button {
-    background-color: #292020;
-    border: transparent;
-    font-size: 20px;
-    flex: 0.08;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border-radius: 100px;
-}
-
-.searchBar button img {
+.searchBar img {
     overflow: hidden;
     width: 70%;
     height: 60%;
