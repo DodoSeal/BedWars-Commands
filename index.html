@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BedWars Command List</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./assets/siteIcon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #292020;">
+    <h1 class="siteTitle">
+        All <span class="titleColor1">Bed</span><span class="titleColor2">Wars</span> Commands
+        <div class="titleUnderline"></div>
+    </h1>
+
+    <div class="searchBar">
+        <input id="searchInput" type="text" placeholder="Search Commands...">
+        <button type="submit"><img src="./assets/search.png"></button>
+    </div>
+
+    <div class="widgetHolder">
+        <div class="cmdWidget">
+            <h1>Gamemode Command</h1>
+            <p>This command allows Hosts/Co-Hosts to change the gamemode of any player in the match.</p>
+            <h3>/gm <span class="cmdArgument">{1/0}</span></h3>
+            <h3>/gm <span class="cmdArgument">{1/0} @all</span></h3>
+            <h3>/gm <span class="cmdArgument">{1/0} {Username}</span></h3>
+            <h3>/gm <span class="cmdArgument">{1/0} @team:{Team Color}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Undo/Redo Commands</h1>
+            <p>These commands allow Hosts/Co-Hosts to undo/redo an action performed by EasyEdit.</p>
+            <h3>//undo</h3>
+            <h3>//redo</h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Cut/Set Commands</h1>
+            <p>These commands allow Hosts/Co-Hosts to remove/set an area of blocks selected by EasyEdit.</p>
+            <h3>//cut</h3>
+            <h3>//set <span class="cmdArgument">{Block Name}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Edit Command</h1>
+            <p>This command allows Hosts/Co-Hosts to create square planes of any block.</p>
+            <h3>//edit flat <span class="cmdArgument">{Block Name} {Size : Number}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Generator Commands</h1>
+            <p>These commands allow Hosts/Co-Hosts to create/delete/manage any generator placed on the map.</p>
+            <h3>/gen list</h3>
+            <h3>/gen remove <span class="cmdArgument">{Generator ID}</span></h3>
+            <h3>/gen move <span class="cmdArgument">{Generator ID}</span></h3>
+            <h3>/gen create global <span class="cmdArgument">{iron/emerald/diamond} {Drop Delay} {Stack Limit}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Shop Commands</h1>
+            <p>These commands allow Hosts/Co-Hoests to create/delete any shop merhcant placed on the map.</p>
+            <h3>/shop list</span></h3>
+            <h3>/shop remove <span class="cmdArgument">{Shop ID}</span></h3>
+            <h3>/shop create <span class="cmdArgument">{item/upgrade}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>SetTeamSpawn Command</h1>
+            <p>This command allows Hosts/Co-Hosts to set the spawn point for a specific team.</p>
+            <h3>/setteamspawn <span class="cmdArgument">{Team Color}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Spawn Commands</h1>
+            <p>These commands allow Hosts/Co-Hosts to give themselves any item in the game.</p>
+            <h3>/spawn <span class="cmdArgument">{Item Name} {Quantity}</span></h3>
+            <h3>/i <span class="cmdArgument">{Item Name} {Quantity}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>SetGeneratorMultiplier Command</h1>
+            <p>This command allows Hosts/Co-Hosts to change the delay between item drops on all game generators.</p>
+            <h3>/setgeneratormultiplier <span class="cmdArgument">{Delay}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Teleport Command</h1>
+            <p>This command allows Hosts/Co-Hosts to teleport Player1 to Player2.</p>
+            <h3>/tp <span class="cmdArgument">{Player1/Player2} {Player2 : Optional}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Give Command</h1>
+            <p>This command allows Hosts/Co-Hosts to give any item to any player in the match.</p>
+            <h3>/give <span class="cmdArgument">{Username} {Item Name} {Quantity}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>SetTeam Command</h1>
+            <p>This command allows Hosts/Co-Hosts to set the team of any player, players on a team, or all players.</p>
+            <h3>/setteam <span class="cmdArgument">{Username} {Team Color}</span></h3>
+            <h3>/setteam <span class="cmdArgument">@a {Team Color}</span></h3>
+            <h3>/setteam <span class="cmdArgument">@team:{Team Color} {Team Color}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Enchant Command</h1>
+            <p>This command allows Hosts/Co-Hosts to give themselves any enchant in the game.</p>
+            <h3>/enchant <span class="cmdArgument">{Enchant Name}_{Level : Number}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>SetHealth Command</h1>
+            <p>This command allows Hosts/Co-Hosts to set the health of any player, team of players, or all players.</p>
+            <h3>/sethealth <span class="cmdArgument">{Username} {Health}</span></h3>
+            <h3>/sethealth <span class="cmdArgument">@a {Health}</span></h3>
+            <h3>/sethealth <span class="cmdArgument">@team:{Team Color} {Health}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Disaster Command</h1>
+            <p>This command allows Hosts/Co-Hosts to trigger any disaster in the game.</p>
+            <h3>/disaster <span class="cmdArgument">{meteors/void_rise/toxic_rain/tornado}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>CoHost Command</h1>
+            <p>This command allows Hosts/Co-Hosts to give the CoHost permission to all players.</p>
+            <h3>/cohost all</h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>SetHealthRegen Command</h1>
+            <p>This command allows Hosts/Co-Hosts to set the health regeneration amount for any player.</p>
+            <h3>/sethealthregen <span class="cmdArgument">{Username} {Regen Amount}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>TpBed Command</h1>
+            <p>This command allows Hosts/Co-Hosts to teleport to any team's bed.</p>
+            <h3>/tpbed <span class="cmdArgument">{Team Color}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>SetDeathmatchTime Command</h1>
+            <p>This command alllows Hosts/Co-Hosts to set the timer for the server bed break.</p>
+            <h3>/deathmatchtime <span class="cmdArgument">{Time : Seconds}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>BedWars/Lobby Commands</h1>
+            <p>These commands allow players to teleport to the BedWars Lobby.</p>
+            <h3>/bedwars</h3>
+            <h3>/lobby</h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Islands Command</h1>
+            <p>This command allows players to teleport to the Easy.gg game, Islands.</p>
+            <h3>/islands</h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>BlacklistItem Command</h1>
+            <p>This command allows Hosts/Co-Hosts to blacklist any item in the game from being purchased from the ItemShop merhcant.</p>
+            <h3>/blacklistitem <span class="cmdArgument">{Item Name}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Airdrop Commands</h1>
+            <p>These commands allow Hosts/Co-Hosts to trigger an airdrop of a Juggernaut crate or Purple Lucky Blocks.</p>
+            <h3>/airdrop <span class="cmdArgument">{juggernaut/luckyblock}</span></h3>
+            <h3>/luckyblockairdrop</h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>TpAll Command</h1>
+            <p>This command allows Hosts/Co-Hosts to teleport all players to themself.</p>
+            <h3>/tpall</h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Kick Command</h1>
+            <p>This command allows Hosts/Co-Hosts to kick any player in a match.</p>
+            <h3>/kick <span class="cmdArgument">{Username}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>Announce Command</h1>
+            <p>This command allows Hosts/Co-Hosts to make an announcement notification for all players.</p>
+            <h3>/announce <span class="cmdArgument">{Message}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>DisableKit Command</h1>
+            <p>This command allows Hosts/Co-Hosts to disable any kit in the game.</p>
+            <h3>/disablekit <span class="cmdArgument">{Kit Name/all}</span></h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>ToggleTeamOverflow Command</h1>
+            <p>This command allows Hosts/Co-Hosts to allow team player count overflowing.</p>
+            <h3>/toggleteamoverflow</h3>
+        </div>
+
+        <div class="cmdWidget">
+            <h1>ToggleSpawn Command</h1>
+            <p>This command allows Hosts/Co-Hosts to toggle the spawning of any entity in the game.</p>
+            <h3>/togglespawn <span class="cmdArgument">{Entity Name}</span></h3>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
