@@ -42,23 +42,16 @@
         </div>
 
         <div class="cmdWidget">
-            <h1>Undo/Redo Commands</h1>
-            <p>These commands allow Hosts/Co-Hosts to undo/redo an action performed by EasyEdit.</p>
-            <h3>//undo</h3>
-            <h3>//redo</h3>
-        </div>
-
-        <div class="cmdWidget">
-            <h1>Cut/Set Commands</h1>
-            <p>These commands allow Hosts/Co-Hosts to remove/set an area of blocks selected by EasyEdit.</p>
+            <h1>Edit Commands</h1>
+            <p>This command allows Hosts/Co-Hosts to edit the map using EasyEdit.</p>
+            <h3>//edit flat <span class="cmdArgument">{Block Name} {Size : Number}</span></h3>
             <h3>//cut</h3>
             <h3>//set <span class="cmdArgument">{Block Name}</span></h3>
-        </div>
-
-        <div class="cmdWidget">
-            <h1>Edit Command</h1>
-            <p>This command allows Hosts/Co-Hosts to create square planes of any block.</p>
-            <h3>//edit flat <span class="cmdArgument">{Block Name} {Size : Number}</span></h3>
+            <h3>//undo</h3>
+            <h3>//redo</h3>
+            <h3>//pos1</h3>
+            <h3>//pos2</h3>
+            <h3>//flat <span class="cmdArgument">{Block Name} {Size : Number}</span></h3>
         </div>
 
         <div class="cmdWidget">
@@ -162,16 +155,12 @@
         </div>
 
         <div class="cmdWidget">
-            <h1>BedWars/Lobby Commands</h1>
-            <p>These commands allow players to teleport to the BedWars Lobby.</p>
+            <h1>Place Teleport Commands</h1>
+            <p>These commands allow players to teleport to the BedWars lobby, Islands, or Prophunt. All of which are created by Easy Games.</p>
             <h3>/bedwars</h3>
             <h3>/lobby</h3>
-        </div>
-
-        <div class="cmdWidget">
-            <h1>Islands Command</h1>
-            <p>This command allows players to teleport to the Easy.gg game, Islands.</p>
             <h3>/islands</h3>
+            <h3>/prophunt</h3> <h3 class="cmdArgument">Disabled</h3>
         </div>
 
         <div class="cmdWidget">
@@ -231,6 +220,18 @@
         <h3>/bed remove <span class="cmdArgument">{Bed ID}</span></h3>
         <!-- <h3>/bed move <span class="cmdArgument">{Bed ID}</span></h3> -->
         <h3>/bed create <span class="cmdArgument">{Team Color}</span></h3>
+    </div>
+
+    <div class="cmdWidget">
+        <h1>AntiCheat Manage Command</h1>
+        <p>This command allows Hosts/Co-Hosts to enable/disable the game's AntiCheat.</p>
+        <h3>/setac <span class="cmdArgument">{enabled/disabled}</span></h3>
+    </div>
+
+    <div class="cmdWidget">
+        <h1>Cube Command</h1>
+        <p>This command allows spawns a giant cube made of White Wool, Oak Planks, and Stone Brick.</p>
+        <h3>/cube</h3>
     </div>
 
     <script src="./index.js"></script>
