@@ -101,6 +101,9 @@
     position: relative;
 }
 
-.shrinkCmd {
-    font-size: 15px;
+.cmdWidget h3.shrinkCmd {
+    font-size: 16px;
+    color: #63DFFF;
+    font-weight: 650;
+    text-align: center;
 }
