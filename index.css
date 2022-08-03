@@ -100,3 +100,7 @@
     margin: 0 auto;
     position: relative;
 }
+
+.shrinkCmd {
+    font-size: 15px;
+}
