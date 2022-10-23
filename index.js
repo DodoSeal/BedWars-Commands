@@ -5,7 +5,7 @@ searchBar.addEventListener('keyup', (e) => {
     Array.from(widgets).forEach(element => {
         const search = e.target.value
 
-        if (!element.textContent.includes(search.toLowerCase()) && e.target.value !== "") {
+        if (!element.textContent.includes(search.toLowerCase()) && search !== "") {
             element.classList.add("disabledWidget")
         } else {
             element.classList.remove("disabledWidget")
