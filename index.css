@@ -32,22 +32,22 @@ body {
 
 .cmdWidget {
     width: 40vw;
-    max-height: 375px;
-    min-height: 375px;
+    max-height: 45vh;
+    min-height: 45vh;
     -webkit-box-flex: 1;
         -ms-flex: 1 2 13%;
             flex: 1 2 13%;
     background-color: var(--element-color);
-    padding: 10px;
-    margin: 10px;
-    margin-top: 30px;
+    padding: 1vw;
+    margin: 1vw;
+    margin-top: 3vh;
     float: left;
     position: relative;
-    border-radius: 25px;
+    border-radius: 2vw;
 }
 
-.cmdWidget h1 {
-    font-size: 30px;
+.cmdWidget h1 { /* Command Title */
+    font-size: 2vw;
     color: white;
     text-align: center;
 }
@@ -56,33 +56,33 @@ body {
     display: none;
 }
 
-.cmdWidget p {
-    font-size: 15px;
+.cmdWidget p { /* Command Description */
+    font-size: 1vw;
     color: white;
     font-weight: 599;
     text-align: center;
 }
 
-.cmdWidget h3 {
-    font-size: 20px;
-    color: #63DFFF;
+.cmdWidget h3 { /* Command Examples */
+    font-size: 1.5vw;
+    color: var(--bedwars-blue);
     font-weight: 650;
     text-align: center;
 }
 
 .cmdArgument {
-    color: #FF5463;
+    color: var(--bedwars-red);
 }
 
 .widgetHolder {
-    text-align: center;
+    margin-left: 5vw;
 }
 
 .searchBar {
     width: 50vw;
     height: 5vh;
-    padding: 20vh;
-    margin-left: calc(50% - 25vw);
+    padding: 4vh;
+    margin-left: calc(50% - calc(25vw + 5vh));
     background-color: var(--element-color);
     display: flex;
     align-items: left;
@@ -108,9 +108,27 @@ body {
     position: relative;
 }
 
-.cmdWidget h3.shrinkCmd {
-    font-size: 14px;
-    color: #63DFFF;
+/* .cmdWidget h3.shrinkCmd {
+    font-size: 0.8vw;
     font-weight: 650;
     text-align: center;
-}
+} */
+
+::-webkit-scrollbar {
+    width: 1vw;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--element-color);
+    border-radius: 1vh;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--element-color);
+  }
